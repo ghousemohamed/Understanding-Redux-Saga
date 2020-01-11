@@ -1,11 +1,11 @@
 import React, {useState, Fragment} from "react";
 
 import {Provider} from 'react-redux';
-import store from "./store";
+import configureStore from "./store";
 import Header from "./components/Header/Header";
 import ImageGrid from "./components/ImageGrid/ImageGrid";
 
-
+const store = configureStore()
 
 function App() {
   const [state, setState] = useState([])
