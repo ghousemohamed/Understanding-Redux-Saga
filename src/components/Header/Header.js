@@ -1,14 +1,15 @@
 import React from "react";
 import {connect} from 'react-redux';
 import "./styles.css";
-import { loadType } from "../../actions/actions";
+import { loadType, loadImages } from "../../actions/actions";
+import { LOAD_TYPE } from "../../actions/types";
 
 
 
-const Header = ({loadType}) => {
+
+const Header = ({load}) => {
     const handleClick = (e) => {
-        e.persist()
-        loadType();
+       load();
     }
     return (<header onClick={(e) => handleClick(e)}>What the Splash</header>)};
 
@@ -16,4 +17,9 @@ const Header = ({loadType}) => {
 const mapStateToProps = ({reducer}) => ({
     state: reducer
 })
-export default connect(mapStateToProps, {loadType})(Header);
+
+const mapDispatchToProps = dispatch => ({
+    load: () => dispatch(loadImages())
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

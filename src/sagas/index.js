@@ -1,13 +1,15 @@
-import {takeEvery, put} from 'redux-saga/effects';
-import { LOAD_TYPE } from '../actions/types';
+import {takeEvery} from 'redux-saga/effects';
+import { LOAD_TYPE, LOAD_IMAGES } from '../actions/types';
 
-function * workerSaga() {
-    console.log('Hey from worker saga')
-    yield put({type: LOAD_TYPE, payload: 'this is a message from the saga'});
+
+
+function * handleImagesLoad() {
+     console.log('Fetching images from unsplash')
 }
 
 function * rootSaga() {
-    yield takeEvery('HELLO', workerSaga)
+    yield takeEvery(LOAD_IMAGES, handleImagesLoad);
+    
 }
 
 export default rootSaga
