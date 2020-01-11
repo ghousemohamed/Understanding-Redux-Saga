@@ -1,8 +1,10 @@
-import React, {useState} from "react";
-import Component from "./components/component/Component";
-import Hello from "./components/Hello/Hello";
+import React, {useState, Fragment} from "react";
+
 import {Provider} from 'react-redux';
 import store from "./store";
+import Header from "./components/Header/Header";
+import ImageGrid from "./components/ImageGrid/ImageGrid";
+
 
 
 function App() {
@@ -10,10 +12,10 @@ function App() {
   
   return (
     <Provider store={store}>
-    <div>
-      <Component />
-      <Hello />
-    </div>
+    <Fragment>
+      <Header />
+      <ImageGrid />
+    </Fragment>
     </Provider>
   );
 }
