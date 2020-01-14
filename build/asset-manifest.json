@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Understanding-Redux-Saga/static/css/main.0841ac80.chunk.css",
+    "main.js": "/Understanding-Redux-Saga/static/js/main.3d8ca13d.chunk.js",
+    "main.js.map": "/Understanding-Redux-Saga/static/js/main.3d8ca13d.chunk.js.map",
+    "runtime-main.js": "/Understanding-Redux-Saga/static/js/runtime-main.6244c3e3.js",
+    "runtime-main.js.map": "/Understanding-Redux-Saga/static/js/runtime-main.6244c3e3.js.map",
+    "static/js/2.47f554a2.chunk.js": "/Understanding-Redux-Saga/static/js/2.47f554a2.chunk.js",
+    "static/js/2.47f554a2.chunk.js.map": "/Understanding-Redux-Saga/static/js/2.47f554a2.chunk.js.map",
+    "index.html": "/Understanding-Redux-Saga/index.html",
+    "precache-manifest.edd1b2bb8f280ef6f5ccdf37bc37e9f5.js": "/Understanding-Redux-Saga/precache-manifest.edd1b2bb8f280ef6f5ccdf37bc37e9f5.js",
+    "service-worker.js": "/Understanding-Redux-Saga/service-worker.js",
+    "static/css/main.0841ac80.chunk.css.map": "/Understanding-Redux-Saga/static/css/main.0841ac80.chunk.css.map",
+    "static/js/2.47f554a2.chunk.js.LICENSE": "/Understanding-Redux-Saga/static/js/2.47f554a2.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6244c3e3.js",
+    "static/js/2.47f554a2.chunk.js",
+    "static/css/main.0841ac80.chunk.css",
+    "static/js/main.3d8ca13d.chunk.js"
+  ]
+}
