@@ -1,4 +1,4 @@
-import { LOAD_TYPE, LOAD_IMAGES } from "../actions/types";
+import { LOAD_TYPE, LOAD_IMAGES, LOAD_IMAGE } from "../actions/types";
 
 const initialState = {
     message: 'hello from reducer',
@@ -9,15 +9,18 @@ export default function(state=initialState, action) {
     switch(action.type) {
         case LOAD_TYPE:
             return {
-                ...state,
-                images: action.payload
+                ...state
             }
         case LOAD_IMAGES:
             return {
+                ...state
+            }
+        case LOAD_IMAGE:
+            return {
                 ...state,
-                message: action.payload
+                images: action.payload
             }
         default:
             return state
     }
-}
+} 

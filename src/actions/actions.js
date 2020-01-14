@@ -1,4 +1,4 @@
-import { LOAD_TYPE, LOAD_IMAGES } from "./types";
+import { LOAD_TYPE, LOAD_IMAGES, LOAD_IMAGE } from "./types";
 import axios from 'axios';
 // export const loadType = () => dispatch => {
 //     dispatch({
@@ -8,14 +8,19 @@ import axios from 'axios';
 // }
 
 export const loadType = () => ({
-    type: LOAD_TYPE,
-    payload: 'This is a message that has to work now'
+    type: LOAD_TYPE
 })
 export const loadImages = () => {
     
     return {
-        type: LOAD_IMAGES,
-        payload: 'This is a message from the action LOAD_IMAGES'
+        type: LOAD_IMAGES
     }
 
+}
+
+export const setImages = (images) => {
+    return {
+        type: LOAD_IMAGE,
+        payload: images
+    }
 }
